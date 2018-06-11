@@ -59,4 +59,12 @@ describe "A cell" do
     expect(cell.neighbors.length).to be(1)
   end
 
+  it 'can add multiple neighbors' do
+    cell.add_neighbor(Cell.new)
+    cell.add_neighbor(Cell.new)
+    cell.add_neighbor(Cell.new)
+
+    expect(cell.neighbors.length).to be(3)
+  end
+
 end
