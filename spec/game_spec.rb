@@ -6,8 +6,8 @@ describe "Conway's game of life" do
     Game.new
   end
 
-  xit 'is instantiated with a grid' do
-
+  it 'is instantiated with a grid' do
+    
   end
 
   xit 'provides a way to obtain the grid it was instantiated with' do

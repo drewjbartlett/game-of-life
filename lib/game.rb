@@ -1,6 +1,5 @@
-# TODO
 class Game
-  def initialize
-    
+  def initialize(grid)
+    @grid = grid;
   end
 end
