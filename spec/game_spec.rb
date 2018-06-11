@@ -2,7 +2,7 @@ require_relative '../lib/game'
 require_relative '../lib/grid'
 
 describe "Conway's game of life" do
-  let (:game) { Game.new(Grid.new) }
+  let (:game) { Game.new(Grid.new(3, 3)) }
 
   it 'exists' do
     expect(Game).to be_truthy
