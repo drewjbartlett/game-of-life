@@ -11,7 +11,7 @@ describe "A cell" do
   }
 
   it 'exists' do
-    Cell.new
+    expect(cell).to be_truthy
   end
 
   it 'is initially alive' do
