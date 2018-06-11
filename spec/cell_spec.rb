@@ -34,18 +34,19 @@ describe "A cell" do
   describe 'after a tick' do
 
     it 'a live cell with fewer than two live neighbors dies' do
-      neighbor_cell = Cell.new
-      neighbor_cell.add_neighbor(cell)
-
-      cell.add_neighbor(neighbor_cell)
+      cell.add_neighbor(Cell.new)
 
       cell.tick
 
       expect(cell).to be_dead
     end
 
-    xit 'a dead cell with fewer than two live neighbors stays dead' do
+    it 'a dead cell with fewer than two live neighbors stays dead' do
+      dead_cell.add_neighbor(Cell.new)
 
+      dead_cell.tick
+
+      expect(dead_cell).to be_dead
     end
 
     # TODO: Cell rules
