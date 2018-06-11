@@ -53,4 +53,10 @@ describe "A cell" do
 
   end
 
+  it 'can add a neighbor' do
+    cell.add_neighbor(Cell.new)
+
+    expect(cell.neighbors.length).to be(1)
+  end
+
 end
