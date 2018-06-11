@@ -5,19 +5,19 @@ describe "Conway's game of life" do
   let (:game) { Game.new(Grid.new) }
 
   it 'exists' do
-    expect(game).to be_truthy
+    expect(Game).to be_truthy
   end
 
   it 'is instantiated with a grid' do
-    expect(game.grid).to be_truthy    
+    expect(game.grid).to be_truthy
   end
 
-  xit 'provides a way to obtain the grid it was instantiated with' do
-
+  it 'provides a way to obtain the grid it was instantiated with' do
+    expect(game.grid).to be_truthy
   end
 
-  xit 'has a tick method' do
-
+  it 'has a tick method' do
+    expect(game).to respond_to(:tick)
   end
 
   xit 'the tick method changes the state of the grid' do
