@@ -6,8 +6,8 @@ describe "A grid of cells" do
     expect(Grid).to be_truthy
   end
 
-  xit 'needs a width and height to be created' do
-
+  it 'needs a width and height to be created' do
+    expect(Grid.new(3, 3)).to be_truthy
   end
 
   xit 'exposes a collection of cells' do
