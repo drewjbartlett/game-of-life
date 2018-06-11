@@ -1,25 +1,25 @@
-# require_relative '../lib/game'
+require_relative '../lib/game'
 
-# describe "Conway's game of life" do
+describe "Conway's game of life" do
 
-#   it 'exists' do
-#     Game.new
-#   end
+  it 'exists' do
+    Game.new
+  end
 
-#   xit 'is instantiated with a grid' do
+  xit 'is instantiated with a grid' do
 
-#   end
+  end
 
-#   xit 'provides a way to obtain the grid it was instantiated with' do
+  xit 'provides a way to obtain the grid it was instantiated with' do
 
-#   end
+  end
 
-#   xit 'has a tick method' do
+  xit 'has a tick method' do
 
-#   end
+  end
 
-#   xit 'the tick method changes the state of the grid' do
+  xit 'the tick method changes the state of the grid' do
 
-#   end
+  end
 
-# end
+end
