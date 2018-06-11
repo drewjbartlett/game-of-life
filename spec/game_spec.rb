@@ -9,7 +9,7 @@ describe "Conway's game of life" do
   end
 
   it 'is instantiated with a grid' do
-    # Game.new
+    expect(game.grid).to be_truthy    
   end
 
   xit 'provides a way to obtain the grid it was instantiated with' do
